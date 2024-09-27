@@ -1,0 +1,55 @@
+@import "/src/styles/variables";
+
+.search {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    
+    input {
+        height: 60px;
+        width: 100%;
+        padding-left: 45px; /* Dovoljno prostora za ikonicu */
+        border: 2px solid #d6d4d4;
+        border-radius: 30px;
+        font-size: 16px;
+        color: #333;
+        background-color: #f8f9fa;
+        transition: all 0.3s ease-in-out;
+        
+        &::placeholder {
+            color: #888;
+            transition: padding-left 0.3s ease;
+        }
+        
+        &:focus {
+            outline: none;
+            border-color: #007bff;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+            
+           
+            &::placeholder {
+                color: #91c2fa;
+            }
+            
+            ~ .search-icon {
+                display: none;
+                transition: opacity 0.3s ease;
+            }
+        }
+    }
+}
+
+.search-icon {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #007bff;
+    transition: opacity 0.3s ease; /* Ikonica polako nestaje */
+}
+
+.search button i {
+    font-size: 24px;
+}

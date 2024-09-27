@@ -1,0 +1,18 @@
+@import "variables";
+@import 'common/header.scss';
+@import 'pages/login.scss';
+@import "common/search-bar";
+@import "bootstrap/scss/bootstrap";
+@import "common/product-card";
+@import "common/back";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: $primary;
+}
